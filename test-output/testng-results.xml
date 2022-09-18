@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="10" passed="5" failed="1" skipped="4">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-09-17T20:58:32 EDT" name="Default suite" finished-at="2022-09-17T20:59:12 EDT" duration-ms="39932">
+    <groups>
+    </groups>
+    <test started-at="2022-09-17T20:58:32 EDT" name="Default test" finished-at="2022-09-17T20:59:12 EDT" duration-ms="39932">
+      <class name="demo.TutorialsNinja">
+        <test-method is-config="true" signature="setup()[pri:0, instance:demo.TutorialsNinja@59505b48]" started-at="2022-09-17T20:58:32 EDT" name="setup" finished-at="2022-09-17T20:58:43 EDT" duration-ms="10980" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="SelectCurrency()[pri:1, instance:demo.TutorialsNinja@59505b48]" started-at="2022-09-17T20:58:43 EDT" name="SelectCurrency" finished-at="2022-09-17T20:58:44 EDT" duration-ms="885" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SelectCurrency -->
+        <test-method signature="OrderCanon()[pri:2, instance:demo.TutorialsNinja@59505b48]" started-at="2022-09-17T20:58:44 EDT" name="OrderCanon" finished-at="2022-09-17T20:58:48 EDT" duration-ms="4007" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OrderCanon -->
+        <test-method signature="OrderIPhone()[pri:3, instance:demo.TutorialsNinja@59505b48]" started-at="2022-09-17T20:58:48 EDT" name="OrderIPhone" finished-at="2022-09-17T20:58:51 EDT" duration-ms="2825" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OrderIPhone -->
+        <test-method signature="CheckoutIphone()[pri:0, instance:demo.TutorialsNinja@59505b48]" started-at="2022-09-17T20:58:51 EDT" name="CheckoutIphone" finished-at="2022-09-17T20:58:55 EDT" depends-on-methods="demo.TutorialsNinja.OrderIPhone" duration-ms="4071" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckoutIphone -->
+        <test-method signature="OrderMacBook()[pri:4, instance:demo.TutorialsNinja@59505b48]" started-at="2022-09-17T20:58:55 EDT" name="OrderMacBook" finished-at="2022-09-17T20:58:58 EDT" duration-ms="2806" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OrderMacBook -->
+        <test-method signature="CheckoutMacBook()[pri:0, instance:demo.TutorialsNinja@59505b48]" started-at="2022-09-17T20:58:58 EDT" name="CheckoutMacBook" finished-at="2022-09-17T20:59:11 EDT" depends-on-methods="demo.TutorialsNinja.OrderMacBook" duration-ms="13222" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='panel-group']//a[contains(text(),'Coupon')]"}
+  (Session info: chrome=105.0.5195.102)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'DESKTOP-DIMGNTL', ip: '10.53.192.85', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2386d7a91791d2335331895bccc9291c, findElement {using=xpath, value=//div[@class='panel-group']//a[contains(text(),'Coupon')]}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 105.0.5195.102, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: D:\Users\ppai2114\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61562}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61562/devtoo..., se:cdpVersion: 105.0.5195.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 10000, pageLoad: 30000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2386d7a91791d2335331895bccc9291c]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='panel-group']//a[contains(text(),'Coupon')]"}
+  (Session info: chrome=105.0.5195.102)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'DESKTOP-DIMGNTL', ip: '10.53.192.85', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2386d7a91791d2335331895bccc9291c, findElement {using=xpath, value=//div[@class='panel-group']//a[contains(text(),'Coupon')]}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 105.0.5195.102, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: D:\Users\ppai2114\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61562}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61562/devtoo..., se:cdpVersion: 105.0.5195.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 10000, pageLoad: 30000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2386d7a91791d2335331895bccc9291c
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
+at demo.TutorialsNinja.CheckoutMacBook(TutorialsNinja.java:276)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckoutMacBook -->
+        <test-method signature="NewCustomerDetails()[pri:0, instance:demo.TutorialsNinja@59505b48]" started-at="2022-09-17T20:59:11 EDT" name="NewCustomerDetails" finished-at="2022-09-17T20:59:11 EDT" depends-on-methods="demo.TutorialsNinja.CheckoutMacBook" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method demo.TutorialsNinja.NewCustomerDetails() on instance demo.TutorialsNinja@59505b48 depends on not successfully finished methods 
+[demo.TutorialsNinja.CheckoutMacBook() on instance demo.TutorialsNinja@59505b48]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method demo.TutorialsNinja.NewCustomerDetails() on instance demo.TutorialsNinja@59505b48 depends on not successfully finished methods 
+[demo.TutorialsNinja.CheckoutMacBook() on instance demo.TutorialsNinja@59505b48]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NewCustomerDetails -->
+        <test-method signature="AccountBillingDetails()[pri:0, instance:demo.TutorialsNinja@59505b48]" started-at="2022-09-17T20:59:11 EDT" name="AccountBillingDetails" finished-at="2022-09-17T20:59:11 EDT" depends-on-methods="demo.TutorialsNinja.NewCustomerDetails" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method demo.TutorialsNinja.AccountBillingDetails() on instance demo.TutorialsNinja@59505b48 depends on not successfully finished methods 
+[demo.TutorialsNinja.NewCustomerDetails() on instance demo.TutorialsNinja@59505b48]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method demo.TutorialsNinja.AccountBillingDetails() on instance demo.TutorialsNinja@59505b48 depends on not successfully finished methods 
+[demo.TutorialsNinja.NewCustomerDetails() on instance demo.TutorialsNinja@59505b48]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AccountBillingDetails -->
+        <test-method signature="PaymentMethodDetails()[pri:0, instance:demo.TutorialsNinja@59505b48]" started-at="2022-09-17T20:59:11 EDT" name="PaymentMethodDetails" finished-at="2022-09-17T20:59:11 EDT" depends-on-methods="demo.TutorialsNinja.AccountBillingDetails" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method demo.TutorialsNinja.PaymentMethodDetails() on instance demo.TutorialsNinja@59505b48 depends on not successfully finished methods 
+[demo.TutorialsNinja.AccountBillingDetails() on instance demo.TutorialsNinja@59505b48]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method demo.TutorialsNinja.PaymentMethodDetails() on instance demo.TutorialsNinja@59505b48 depends on not successfully finished methods 
+[demo.TutorialsNinja.AccountBillingDetails() on instance demo.TutorialsNinja@59505b48]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PaymentMethodDetails -->
+        <test-method signature="ContactUsForm()[pri:0, instance:demo.TutorialsNinja@59505b48]" started-at="2022-09-17T20:59:11 EDT" name="ContactUsForm" finished-at="2022-09-17T20:59:11 EDT" depends-on-methods="demo.TutorialsNinja.PaymentMethodDetails" duration-ms="1" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method demo.TutorialsNinja.ContactUsForm() on instance demo.TutorialsNinja@59505b48 depends on not successfully finished methods 
+[demo.TutorialsNinja.PaymentMethodDetails() on instance demo.TutorialsNinja@59505b48]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method demo.TutorialsNinja.ContactUsForm() on instance demo.TutorialsNinja@59505b48 depends on not successfully finished methods 
+[demo.TutorialsNinja.PaymentMethodDetails() on instance demo.TutorialsNinja@59505b48]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ContactUsForm -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:demo.TutorialsNinja@59505b48]" started-at="2022-09-17T20:59:11 EDT" name="teardown" finished-at="2022-09-17T20:59:12 EDT" duration-ms="1041" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- demo.TutorialsNinja -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
